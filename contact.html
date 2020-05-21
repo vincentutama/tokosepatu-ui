@@ -8,22 +8,13 @@
 	<script src="js/bootstrap.bundle.js"></script>
 	<script>
 		$(document).ready(function() {
-			/* Every time the window is scrolled ... */
-			$(window).scroll(function(){
-    			/* Check the location of each desired element */
-    			$(".fadein").each(function(i){
-        			var bottom_of_object = $(this).position().top + $(this).outerHeight();
-        			var bottom_of_window = $(window).scrollTop() + $(window).height();
-					/* If the object is completely visible in the window, fade it in */
-					if( bottom_of_window = bottom_of_object ){
-            			$(this).animate({'opacity':'1'},500);
-					}    
-    			}); 
-			}); 
+			$(".fadein").animate({'opacity':'1'},500);
 		});
 	</script>	
 </head>
 <body>
+	<div class="col-md-4 col-lg-4">&nbsp;</div>
+<div class="col-md-4 col-lg-4">&nbsp;</div>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 		<a class="navbar-brand" href="#">TokoSepatu</a> <button aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarsExampleDefault" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -55,22 +46,20 @@
 		<h1 class = "display-4"><strong>Contact Us</strong></h1>
   <h4 class = "none">Developer website TokoSepatu dapat di hubungi melalui media - media berikut</h4><br>
 	<div class="row">
-		<div class="col-md-4 offset-lg-4 col-lg-4 fadein">
+		<div class="col-md-4 col-lg-4 fadein offset-lg-1">
 			<h2>Github</h2>
 		  	<h4>vincentutama</h4>
 		  	<a href="https://github.com/vincentutama"><img alt="" class="cards" height="300" src="img/ghvu.png" width="300" style="alignment-baseline: "></a>
 			<p></p>
 		</div>
-  	</div>
-	<br><br>
-	<div class="row">
-		<div class="col-md-4 offset-lg-4 col-lg-4 fadein">
-			<h2>Github</h2>
+		<div class="col-md-4 col-lg-4 fadein offset-lg-2">
+		  <h2>Github</h2>
 		  	<h4>kalyaicasia</h4>
 		  	<a href="https://github.com/kalyaicasia"><img alt="" class="cards" height="300" src="img/ghki.png" width="300" style="alignment-baseline: "></a>
 			<p></p>
-		</div>
+	  </div>
   	</div>
+	<br>
 </div>	
 <br><br>
 <footer class="container fadein">
