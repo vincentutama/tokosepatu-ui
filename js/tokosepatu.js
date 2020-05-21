@@ -4,6 +4,10 @@ const AN_ENDPOINT = 'http:localhost:8000/item/'
 
 let listItemDoc = document.getElementById("butt-keranjang");
 
+window.onload = function() {
+    doThis();
+};
+
 function doThis(){
     let xhr = new XMLHttpRequest();
     let complete_url = `${AN_ENDPOINT}`;
@@ -17,3 +21,4 @@ function doThis(){
     };
     xhr.send();
 }
+
