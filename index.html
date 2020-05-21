@@ -8,17 +8,14 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<a class="navbar-brand" href="#">TokoSepatu</a> <button aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarsExampleDefault" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+		<a class="navbar-brand" href="index.html">TokoSepatu</a> <button aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarsExampleDefault" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
 					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item dropdown">
-					<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Products</a>
-					<div aria-labelledby="dropdown01" class="dropdown-menu">
-						<a class="dropdown-item" href="#">Bola</a> <a class="dropdown-item" href="#">Tari</a> <a class="dropdown-item" href="#">Memancing</a>
-					</div>
+				<li class="nav-item">
+					<a class="nav-link" href="product.html" id="Products">Products</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="contact.html">Contact Us</a>
@@ -27,12 +24,64 @@
 					<a class="nav-link" href="about.html">About</a>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Keranjang</button>
-			</form>
+			<button class="btn btn-outline-danger my-2 my-sm-0" id="butt-keranjang" onclick="doThis()">Keranjang</button>
 		</div>
 	</nav>
 	<main role="main">
+
+				
+		<!--Begin Carousel-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="1"></li>
+			  <li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+				<div class="container">
+				  <div class="carousel-caption text-left">
+					<h1>Example headline.</h1>
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+				<div class="container">
+				  <div class="carousel-caption">
+					<h1>Another example headline.</h1>
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+				<div class="container">
+				  <div class="carousel-caption text-right">
+					<h1>One more for good measure.</h1>
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		  </div>
+
+
+		<!--End Of Carousel-->
+
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">
 			<div class="container">
@@ -41,6 +90,10 @@
 				<p><a class="btn btn-dark btn-sm" href="#" role="button">Pelajari lebih lanjut</a></p>
 			</div>
 		</div>
+
+
+
+
 		<div class="container">
 			<!-- Example row of columns -->
 			<div class="row">
@@ -61,17 +114,21 @@
 				</div>
 			</div>
 			<hr>
-		</div><!-- /container -->
+		</div>
+		
+		<!-- /container -->
 		
 	</main>
 	
-	<div class="container">
+	<div class="container-fluid p-3 my-3 bg-dark text-white">
 		<p>PROGWEB - GENAP 2020 - 1722002 | 1722031</p>
 		<p>Dosen: AGUS PRIJONO</p>
 	</div>
 	<script src="jquery-3.5.0.min.js">
 	</script> 
 	<script src="js/bootstrap.bundle.js">
+	</script>
+	<script src="js/tokosepatu.js">
 	</script>
 </body>
 </html>

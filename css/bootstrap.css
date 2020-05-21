@@ -5272,7 +5272,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
-  background-image: url("../img/jumbotron_bg.jpg");
   background-size: cover;
 }
 
