@@ -9,23 +9,28 @@
    
     </style>
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" id="form_input">
   <h2 class="display-4">TokoSepatu</h2>
   <h3 class="h4 mb-3 font-weight-normal">Please sign in</h3>
-  <label for="inputEmail" class="sr-only">Email address</label>
+  <label for="inputUsername" class="sr-only">Username</label>
   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
   <label for="inputPassword" class="sr-only">Password</label>
   <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
   <div class="checkbox mb-3">
     <label>
-      <input type="checkbox" value="remember-me"> Remember me
+      <input type="checkbox"/> Remember me
     </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="ver_account()">Sign in</button>
+  <a class="btn btn-lg btn-warning btn-block" href = "signup.html">Sign Up</a>
+  <br>
+  <a class="btn btn-danger btn" href = "index.html">Back to Homepage</a>
+  <p class="mt-5 mb-3 text-muted">&copy;TokoSepatu 2020-2020</p>
 </form>
+<script src="js/module.js"></script>
+<script src="js/signin.js"></script>
 </body>
 </html>
