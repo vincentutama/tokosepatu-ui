@@ -2,10 +2,10 @@
 
 let itemEndpoint = 'http://localhost:8000/item/';
 let productContainer = document.getElementById("product-container");
-const currency = "Rp";
+const currency = "Rp.";
 
 window.onload = function() {
-    initialize();
+    initialize(); //refer to init_render.js
     GET(itemEndpoint, (resp) => {
         console.log(resp);
         if(resp.status!==0){
