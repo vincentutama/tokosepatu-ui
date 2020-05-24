@@ -12,7 +12,6 @@ function initialize() {
 function logOut(){
     eraseCookie('Name');
     eraseCookie('CustomerId');
-
 }
 
 function renderNavbar(name) {
@@ -57,7 +56,7 @@ function renderNavbar(name) {
     rendering.push('<button class="btn btn-outline-info my-2 my-sm-0 ml-2">Sign In</button>');
     }
     else{
-    rendering.push('<button class="btn btn-outline-danger my-2 my-sm-0 ml-2" onclick = "logOut()">Log Out</button>');
+        rendering.push('<button class="btn btn-outline-danger my-2 my-sm-0 ml-2" onclick = "logOut()">Log Out</button>');
     }
     rendering.push('</form>');
     rendering.push('</div>');

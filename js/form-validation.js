@@ -12,6 +12,9 @@
         if (form.checkValidity() === false) {
           event.preventDefault()
           event.stopPropagation()
+          isFormValid = false;
+        } else {
+          isFormValid = true;
         }
         form.classList.add('was-validated')
       }, false)

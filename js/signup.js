@@ -52,7 +52,6 @@ function change_itemQuantity(){
     });
 }
 
-//ini adalah jquery
 
 $('#form1').submit(function(){
     create_account();

@@ -5,7 +5,7 @@ let productContainer = document.getElementById("product-container");
 const currency = "Rp.";
 
 window.onload = function() {
-    initialize(); //refer to init_render.js
+    initialize(); // refer to init_render.js
     GET(itemEndpoint, (resp) => {
         console.log(resp);
         if(resp.status!==0){

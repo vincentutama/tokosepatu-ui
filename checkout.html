@@ -28,7 +28,7 @@
     <div class="container">
   <div class="py-5 text-center">
     <h1 class = "display-3">TokoSepatu</h1>
-    <h2>Checkout form</h2>
+    <h2>Checkout</h2>
     <p class="lead">Siap menerima sepatumu? Isi info-info kamu di bawah dan lakukan pembelian!</p>
   </div>
 
@@ -49,12 +49,12 @@
       </div>
     </div>
     <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Alamat Pengiriman</h4>
-      <form class="needs-validation" novalidate>
+      <h4 class="mb-3">Data Penerima</h4>
+      <form id="checkout-form" class="needs-validation" onSubmit="return confirmPurchase()" action="javascript:void(0);" novalidate>
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">Nama Penerima</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Nama kamu" value="" required>
+            <input type="text" class="form-control" id="firstName" placeholder="Nama kamu" required>
             <div class="invalid-feedback">
               Isi nama penerima.
             </div>
@@ -72,66 +72,35 @@
         </div>
 
         <div class="mb-3">
-          <label for="address">Address</label>
+          <label for="address">Alamat Pengiriman</label>
           <input type="text" class="form-control" id="address" placeholder="Contoh: Jl Kaki no. 1, Kota Betis, Jawa Barat" required>
           <div class="invalid-feedback">
             Masukkan alamat pengiriman.
           </div>
         </div>
-
         <hr class="mb-4">
-
         <h4 class="mb-3">Payment</h4>
-
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
-            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-            <label class="custom-control-label" for="credit">Credit card</label>
+            <input onclick = "paymentSet(1)" id="credit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="credit">Kartu Kredit</label>
           </div>
           <div class="custom-control custom-radio">
-            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="debit">Debit card</label>
+            <input onclick = "paymentSet(2)" id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Transfer Bank</label>
           </div>
           <div class="custom-control custom-radio">
-            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="paypal">PayPal</label>
+            <input onclick = "paymentSet(3)" id="ovo" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="ovo">OVO</label>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="cc-name">Name on card</label>
-            <input type="text" class="form-control" id="cc-name" placeholder="" required>
-            <small class="text-muted">Full name as displayed on card</small>
-            <div class="invalid-feedback">
-              Name on card is required
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="cc-number">Credit card number</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="" required>
-            <div class="invalid-feedback">
-              Credit card number is required
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="cc-expiration">Expiration</label>
-            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-            <div class="invalid-feedback">
-              Expiration date required
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="cc-cvv">CVV</label>
-            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-            <div class="invalid-feedback">
-              Security code required
-            </div>
-          </div>
+        <div id="payment-info">
+          <!-- RENDERED IN CHECKOUT.JS -->
+          
+          
         </div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        <button class="btn btn-primary btn-lg btn-block" type = "submit" >Continue to checkout</button>
         <span><a href="cart.html">Kembali ke keranjang</a></span>
       </form>
     </div>
