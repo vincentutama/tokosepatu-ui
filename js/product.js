@@ -1,6 +1,7 @@
 "use strict";
 
 let itemEndpoint = 'http://localhost:8000/item/';
+let userCartEndpoint = 'http://localhost:8000/';
 let productContainer = document.getElementById("product-container");
 const currency = "Rp.";
 
@@ -21,8 +22,8 @@ window.onload = function() {
 
 
 function renderProduct(productList) {
-  let rendering = [];
-  // Assume productList = [{ItemImage: ..., ItemName: ..., ItemPrice: ..., ...}, {...}, {...}]
+    let rendering = [];
+    // Assume productList = [{ItemImage: ..., ItemName: ..., ItemPrice: ..., ...}, {...}, {...}]
 
   productList.forEach((product) => {
     rendering.push('<div class="col-lg-4 col-md-6 mb-4">');
@@ -36,11 +37,30 @@ function renderProduct(productList) {
     rendering.push('<p class="card-text">' + product.ItemDescription + '</p>');
     rendering.push('</div>');
     rendering.push('<div class="card-footer">');
-    rendering.push('<a href = "#" class = "btn btn-primary">Add to Cart</a>');
+    rendering.push('<button onclick="addItem(' + product.ItemId +')"' + 'class = "btn btn-primary">Add to Cart</button>');
     rendering.push('</div>');
     rendering.push('</div>');
     rendering.push('</div>');
   });
 
   productContainer.innerHTML = rendering.join("");
+}
+
+function addItem(itemId){
+    const custCookie = getCookie('CustomerId');
+    let additem = 'http://localhost:8000/additem';
+
+    let itembody = {
+        'CustomerId' : custCookie,
+        'CartItemId' : itemId,
+        'Quantity' : 1
+    };
+
+    POST(additem, itembody, (resp) =>{
+        if(resp.status!==0){
+            // Item added successfully, do something here
+        }
+
+    });
+    
 }

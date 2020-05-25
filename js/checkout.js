@@ -17,13 +17,11 @@ window.onload = function(){
             renderTotal(resp.data);
         }
         else{
-   
+            // nothing
         }
     });
     let pathname = window.location.pathname;
 }
-
-// SHORT FUNCTION GOES HERE
 
 function grandTotal(subTotal){
     grandTot = grandTot + subTotal;
@@ -39,12 +37,8 @@ function mergeInput(){
     [...formId.elements].forEach((thing) =>{
         everything = everything + thing.value + ',';
     });
-    // cartList.forEach((CartItem) => {
-    //     everything
-    // }); //don't mind this, i mind it
     return everything;
 }
-//LONG FUNCTION GOES HERE
 
 function renderTotal(cartList) {
     let rendering = [];
