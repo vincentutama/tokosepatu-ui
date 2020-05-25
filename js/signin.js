@@ -18,7 +18,7 @@ function ver_account(){
                 setCookies('CustomerId', resp.data.CustomerId,1);
                 setCookies('Name', resp.data.Name,1);
             }
-            window.location.href = '/crappy-ass-ui/';
+            window.location.href = '/tokosepatu-ui-ui/';
         }
         else{
 

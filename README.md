@@ -1,2 +1,2 @@
-# Tokosepatu-ui 
-Sebuah proyek mata kuliah pemrograman web.
+# crappy-ass - a crappy ass web project
+I just want to pass the subject.

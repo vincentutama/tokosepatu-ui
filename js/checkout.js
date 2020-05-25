@@ -152,11 +152,11 @@ function confirmPurchase(){
                 console.log(resp);
                 if(resp.status){
                     console.log('success');
-                    // window.location.href = "http://localhost/crappy-ass-ui/success.html"; // if your domain is https://vincent.com,
-                    // you will be redirected to http://localhost/crappy-ass-ui/success.html
+                    // window.location.href = "http://localhost/tokosepatu-ui-ui/success.html"; // if your domain is https://vincent.com,
+                    // you will be redirected to http://localhost/tokosepatu-ui-ui/success.html
                     // VERSUS
-                    window.location.href = "/crappy-ass-ui/success.html"; // if your domain is https://vincent.com,
-                    // you will be redirected to https://vincent.com/crappy-ass-ui/success.html
+                    window.location.href = "/tokosepatu-ui-ui/success.html"; // if your domain is https://vincent.com,
+                    // you will be redirected to https://vincent.com/tokosepatu-ui-ui/success.html
                     // return false;
                 } else {
                     // nothing
