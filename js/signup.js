@@ -1,5 +1,5 @@
 "use strict";
-let ENDPOINT_SIGNUP = 'http:localhost:8000/user/';
+let ENDPOINT_SIGNUP = 'http:vinegar-vint.herokuapp.com/user/';
 
 function create_account(){
     let formId = document.getElementById("form1");
@@ -23,7 +23,7 @@ function create_account(){
 
 
 function delete_cartItem(){
-    let ENDPOINT_DEL="http:localhost:8000/cartitem/" + "0";
+    let ENDPOINT_DEL="http:vinegar-vint.herokuapp.com/cartitem/" + "0";
     DELETE(ENDPOINT_DEL, {}, (resp) => {
         console.log(resp);
         if(resp.status!==0){
@@ -36,7 +36,7 @@ function delete_cartItem(){
 }
 
 function change_itemQuantity(){
-    let ENDPOINT_PUT="http://localhost:8000/cartitem/" + "0";
+    let ENDPOINT_PUT="http://vinegar-vint.herokuapp.com/cartitem/" + "0";
     let item_body = {
         'Quantity' : form1.elements[0].value,
     };

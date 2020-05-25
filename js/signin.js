@@ -1,5 +1,5 @@
 "use strict";
-let ENDPOINT_VERIFY = 'http://localhost:8000/verify/';
+let ENDPOINT_VERIFY = 'http://vinegar-vint.herokuapp.com/verify/';
 
 function ver_account(){
     let formId = document.getElementById("form_input");
@@ -18,7 +18,7 @@ function ver_account(){
                 setCookies('CustomerId', resp.data.CustomerId,1);
                 setCookies('Name', resp.data.Name,1);
             }
-            window.location.href = '/tokosepatu-ui-ui/';
+            window.location.href = 'http://vincentutama.herokuapp.com/';
         }
         else{
 

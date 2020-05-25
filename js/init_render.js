@@ -18,11 +18,11 @@ function renderNavbar(name) {
     var pathname = window.location.pathname; 
     let rendering = [];
 
-    const isProductPage = pathname == '/tokosepatu-ui-ui/product.html' && 'active' || '';
-    const isIndexPage = pathname == '/tokosepatu-ui-ui/index.html' && 'active' || '';
-    const isContactPage = pathname == '/tokosepatu-ui-ui/contact.html' && 'active' || '';
-    const isAboutPage = pathname == '/tokosepatu-ui-ui/about.html' && 'active' || '';
-    const isCartPage = pathname == '/tokosepatu-ui-ui/cart.html' && 'active' || '';
+    const isProductPage = pathname == 'http://vincentutama.herokuapp.com/product.html' && 'active' || '';
+    const isIndexPage = pathname == 'http://vincentutama.herokuapp.com/index.html' && 'active' || '';
+    const isContactPage = pathname == 'http://vincentutama.herokuapp.com/contact.html' && 'active' || '';
+    const isAboutPage = pathname == 'http://vincentutama.herokuapp.com/about.html' && 'active' || '';
+    const isCartPage = pathname == 'http://vincentutama.herokuapp.com/cart.html' && 'active' || '';
 
     rendering.push('<a class="navbar-brand" href="index.html">TokoSepatu</a>');
 	rendering.push('<button aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarsExampleDefault" data-toggle="collapse" type="button">');

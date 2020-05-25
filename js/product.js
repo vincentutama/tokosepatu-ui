@@ -1,7 +1,7 @@
 "use strict";
 
-let itemEndpoint = 'http://localhost:8000/item/';
-let userCartEndpoint = 'http://localhost:8000/';
+let itemEndpoint = 'http://vinegar-vint.herokuapp.com/item/';
+let userCartEndpoint = 'http://vinegar-vint.herokuapp.com/';
 let productContainer = document.getElementById("product-container");
 const currency = "Rp.";
 
@@ -48,7 +48,7 @@ function renderProduct(productList) {
 
 function addItem(itemId){
     const custCookie = getCookie('CustomerId');
-    let additem = 'http://localhost:8000/additem';
+    let additem = 'http://vinegar-vint.herokuapp.com/additem';
 
     let itembody = {
         'CustomerId' : custCookie,

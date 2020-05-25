@@ -1,7 +1,7 @@
 "use strict";
 const custCookie = getCookie('CustomerId');
-let cartEndpoint = 'http://localhost:8000/cartinfo/' + custCookie;
-let transEndpoint = 'http://localhost:8000/transaction';
+let cartEndpoint = 'http://vinegar-vint.herokuapp.com/cartinfo/' + custCookie;
+let transEndpoint = 'http://vinegar-vint.herokuapp.com/transaction';
 let cartContainer = document.getElementById("cart-container");
 let grandContainer = document.getElementById("total-container");
 let countContainer = document.getElementById("counting-pill");
@@ -152,10 +152,10 @@ function confirmPurchase(){
                 console.log(resp);
                 if(resp.status){
                     console.log('success');
-                    // window.location.href = "http://localhost/tokosepatu-ui-ui/success.html"; // if your domain is https://vincent.com,
-                    // you will be redirected to http://localhost/tokosepatu-ui-ui/success.html
+                    // window.location.href = "http://vinegar-vint.herokuapp.com/tokosepatu-ui-ui/success.html"; // if your domain is https://vincent.com,
+                    // you will be redirected to http://vinegar-vint.herokuapp.com/tokosepatu-ui-ui/success.html
                     // VERSUS
-                    window.location.href = "/tokosepatu-ui-ui/success.html"; // if your domain is https://vincent.com,
+                    window.location.href = "http://vincentutama.herokuapp.com/success.html"; // if your domain is https://vincent.com,
                     // you will be redirected to https://vincent.com/tokosepatu-ui-ui/success.html
                     // return false;
                 } else {

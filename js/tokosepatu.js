@@ -1,6 +1,6 @@
 "use strict";
 
-const AN_ENDPOINT = 'http:localhost:8000/item/'
+const AN_ENDPOINT = 'http:vinegar-vint.herokuapp.com/item/'
 
 let listItemDoc = document.getElementById("butt-keranjang");
 

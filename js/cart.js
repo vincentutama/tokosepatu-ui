@@ -1,6 +1,6 @@
 "use strict";
 const custCookie = getCookie('CustomerId');
-let cartEndpoint = 'http://localhost:8000/cartinfo/' + custCookie;
+let cartEndpoint = 'http://vinegar-vint.herokuapp.com/cartinfo/' + custCookie;
 let cartContainer = document.getElementById("cart-container");
 let grandtotContainer = document.getElementById("grand-total");
 const currency = "Rp.";
@@ -22,7 +22,7 @@ window.onload = function(){
 }
 
 function removeItem(itemid){
-    let ITEM_ENDPOINT = 'http://localhost:8000/cartitem'
+    let ITEM_ENDPOINT = 'http://vinegar-vint.herokuapp.com/cartitem'
     let body ={
         'CustomerId' : custCookie,
         'CartItemId' : itemid
@@ -39,7 +39,7 @@ function removeItem(itemid){
 }
 
 function emptyCart(){
-    let ITEM_ENDPOINT = 'http://localhost:8000/delete'
+    let ITEM_ENDPOINT = 'http://vinegar-vint.herokuapp.com/delete'
     let body ={
         'CustomerId' : custCookie,
     };
@@ -55,7 +55,7 @@ function emptyCart(){
 }
 
 function changeValue(){
-    let ITEM_ENDPOINT = 'http://localhost:8000/cartitem'
+    let ITEM_ENDPOINT = 'http://vinegar-vint.herokuapp.com/cartitem'
     let newQuantity = document.getElementById("quantity-box").value;
 
     let body = {
