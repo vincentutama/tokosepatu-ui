@@ -4,10 +4,19 @@
         <title>Your Cart</title>
         <link href="css/cart.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
+		<script src="jquery-3.5.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$(".fadein").animate({'opacity':'1'},800);
+			$(".fadein2").animate({'opacity':'1'},1000);
+			$(".fadein3").animate({'opacity':'1'},1200);
+		});
+	</script>
     </head>    
     <body>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarku">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark fadein" id="navbarku">
             <!-- RENDERED BY init_render.js -->
         </nav>
         <br><br><br>
@@ -19,13 +28,13 @@
                         <!-- CART ITEM STARTS HERE -->
                         
                     </div>
-                    <div class = "ibox-content">
+                    <div class = "ibox-content fadein2">
                         <a class="btn btn-primary pull-right" href="checkout.html"><i class="fa fa fa-shopping-cart"></i> Checkout</a>
                         <a class="btn btn-white" href="product.html"><i class="fa fa-arrow-left"></i> Continue shopping</a>
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="ibox">
+                    <div class="ibox fadein2">
                         <div class="ibox-title">
                         <h5>Cart Summary</h5>
                         </div>
@@ -44,7 +53,7 @@
                         </div>
                     </div>
                 
-                    <div class="ibox">
+                    <div class="ibox fadein3">
                         <div class="ibox-title">
                             <h5>Support</h5>
                         </div>
@@ -57,8 +66,6 @@
                 </div>
             </div>
         </div>
-        <script src="jquery-3.5.0.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/module.js"></script>
         <script src="js/init_render.js"></script>
         <script src="js/cart.js"></script>
