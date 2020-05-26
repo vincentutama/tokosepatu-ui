@@ -112,3 +112,18 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+.fadein1{
+	opacity: 0;
+}
+
+.fadein2{
+	opacity: 0;
+}
+
+.fadein3{
+	opacity: 0;
+}
+.fadein4{
+	opacity: 0;
+}
