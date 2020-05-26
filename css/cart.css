@@ -91,3 +91,15 @@ table.shoping-cart-table tr td:last-child {
   background: #ffffff;
   padding: 10px 15px;
 }
+.fadein{
+	opacity: 0;
+}
+.fadein2{
+	opacity: 0;
+}
+.fadein3{
+	opacity: 0;
+}
+.fadein4{
+	opacity: 0;
+}
