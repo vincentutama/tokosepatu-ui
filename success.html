@@ -4,7 +4,9 @@
     <title>MX-128</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
+	<link href="css/cover.css" rel="stylesheet">
+	<script src="jquery-3.5.0.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -21,8 +23,16 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+    
+	<script>
+		$(document).ready(function() {
+			$(".fadein").animate({'opacity':'1'},800);
+			$(".fadein2").animate({'opacity':'1'},1000);
+			$(".fadein3").animate({'opacity':'1'},1200);
+			$(".fadein4").animate({'opacity':'1'},1400);
+		});
+	</script>	
+    
   </head>
   <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -32,19 +42,19 @@
   </header>
 
   <main role="main" class="inner cover">
-    <h1 class="cover-heading" id="greetings"></h1>
-    <p class="lead">
+    <h1 class="cover-heading fadein" id="greetings"></h1>
+    <p class="lead fadein2">
       Pesanan kamu telah diterima dan sedang diproses oleh tim kami<br>
       Silahkan cek email kamu untuk update terbaru dari pesananmu<br>
-      <h5>Terima kasih telah berbelanja di TokoSepatu.</h5>
+      <h5 class="fadein2">Terima kasih telah berbelanja di TokoSepatu.</h5>
     </p>
     <p class="lead">
-      <a href="index.html" class="btn btn-lg btn-secondary">Kembali Ke Home</a>
+      <a href="index.html" class="btn btn-lg btn-secondary fadein3">Kembali Ke Home</a>
     </p>
   </main>
 
   <footer class="mastfoot mt-auto">
-    <div class="inner">
+    <div class="inner fadein4">
       <p>1722002 | 1722031</p>
       <p class = "text-muted">&copy;Kalya Icasia & Vincent Utama</p>
     </div>
