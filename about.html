@@ -3,20 +3,30 @@
 <head>
 	<title>About</title><!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet"><!-- Custom styles for this template -->
-	<link href="style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="jquery-3.5.0.min.js"></script> 
+	<script src="js/bootstrap.bundle.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".fadein").animate({'opacity':'1'},800);
+			$(".fadein2").animate({'opacity':'1'},1000);
+			$(".fadein3").animate({'opacity':'1'},1200);
+			$(".fadein4").animate({'opacity':'1'},1400);
+		});
+	</script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarku">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark fadein" id="navbarku">
 		<!-- RENDERED BY init_render.js -->
 	</nav>
 </body>
 	<div class="container">
 		<br><br><br>
-		<h1 class = "display-4">About TokoSepatu</h1>
-		<h4 class = "none">TokoSepatu adalah sebuah website yang dibuat oleh Kalya Icasia dan Vincent Utama 
+		<h1 class = "display-4 fadein2">About TokoSepatu</h1>
+		<h4 class = "none fadein2">TokoSepatu adalah sebuah website yang dibuat oleh Kalya Icasia dan Vincent Utama 
 		sebagai tugas proyek mata kuliah Pemrograman Web.</h4>
-		<p>Dalam pengembangan website ini, digunakan beberapa tools dan library seperti:
-		<ul>
+		<p class="fadein3">Dalam pengembangan website ini, digunakan beberapa tools dan library seperti:
+		<ul class="fadein3">
 			<li>Bootstrap</li>
 			<li>JavaScript</li>
 			<li>jQuery</li>
@@ -25,7 +35,7 @@
 		</ul>
 		</p>
 		<br>
-		<div class="media">
+		<div class="media fadein3">
 				<div class="figure-caption">
 					<h4>Lokasi Kantor Kami</h4>
 					<p>Kos Vincent <br>Jl. Terusan Babakan Jeruk IV No.38 <br> Bandung Jawa Barat</p>
@@ -40,16 +50,11 @@
 		</div>
 	</div>
 	<br>
-	<div class="container-fluid p-3 my-3 bg-dark text-white">
+	<div class="container-fluid p-3 my-3 bg-dark text-white fadein4">
 		<p>PROGWEB - GENAP 2020 - 1722002 | 1722031</p>
 		<p>Dosen: AGUS PRIJONO</p>
 	</div>
-	<script src="jquery-3.5.0.min.js">
-	</script> 
-	<script src="js/bootstrap.bundle.js">
-	</script>
-	<script src="js/init_render.js">
-	</script>
+	<script src="js/init_render.js">	</script>
 	<script src="js/about.js"></script>
 	<script src="js/module.js"></script>
 	<script>
