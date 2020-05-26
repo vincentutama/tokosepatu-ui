@@ -22,7 +22,7 @@ Setelah sebua dependencies dipenuhi lakukan installasi sebagai berikut:
   6. Akses website tokosepatu melalui localhost
   7. Akses halaman sign in untuk membuat account atau sign in
   
- ##useful links
+ ## useful links
  
  [CORS Error](https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9)
  
