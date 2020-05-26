@@ -1,7 +1,10 @@
-# tokosepatu-ui: Front end dari proyek web toko sepatu
+# WARNING WORK IN PROGRESS
+## tokosepatu-ui: Front end dari proyek web toko sepatu
 Sebuah proyek mata kuliah pemrograman web di Teknik Elektro Universitas Kristen Maranatha.
 
-# Persiapan
+
+
+## Persiapan
 Untuk mencoba web ini di windows, diperlukan beberapa dependencies:
   1. [XAMPP](https://www.apachefriends.org/index.html)
   2. [Composer](https://getcomposer.org/download/)
