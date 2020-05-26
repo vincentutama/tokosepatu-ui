@@ -1,4 +1,4 @@
-# WARNING WORK IN PROGRESS
+# WARNING: WORK IN PROGRESS
 ## tokosepatu-ui: Front end dari proyek web toko sepatu
 Sebuah proyek mata kuliah pemrograman web di Teknik Elektro Universitas Kristen Maranatha.
 
