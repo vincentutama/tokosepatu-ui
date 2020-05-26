@@ -4,17 +4,33 @@
 	<title>Home</title><!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet"><!-- Custom styles for this template -->
 	<link href="css/style.css" rel="stylesheet">
-
+	<script src="jquery-3.5.0.min.js"></script> 
+	<script src="js/bootstrap.bundle.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".fadein").animate({'opacity':'1'},800);
+			$(".fadein2").animate({'opacity':'1'},1000);
+			$(window).scroll(function(){
+    			$(".fadein3, .fadein4").each(function(i){
+        			var bottom_of_object = $(this).position().top + $(this).outerHeight();
+        			var bottom_of_window = $(window).scrollTop() + $(window).height();
+					if( bottom_of_window = bottom_of_object ){
+            			$(this).animate({'opacity':'1'},500);
+					}	    
+    			}); 
+			});
+		});
+	</script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbarku">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark fadein" id="navbarku">
 		<!-- RENDERED BY init_render.js -->
 	</nav>
 	<main role="main">
 
 				
 		<!--Begin Carousel-->
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div id="myCarousel" class="carousel slide fadein2" data-ride="carousel">
 			<ol class="carousel-indicators">
 			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			  <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -66,7 +82,7 @@
 		<!--End Of Carousel-->
 
 		<!-- Main jumbotron for a primary marketing message or call to action -->
-		<div class="jumbotron">
+		<div class="jumbotron fadein3">
 			<div class="container">
 				<h1 class="display-3">BOLA MX-128</h1>
 				<p>Tanpa Batas, Tanpa Beban, Tanpa Omong Kosong. BOLA MX-128 membawamu ke tingkat perbolaan tertinggi.</p>
@@ -77,7 +93,7 @@
 
 
 
-		<div class="container">
+		<div class="container fadein4">
 			<!-- Example row of columns -->
 			<div class="row">
 				<div class="col-md-4">
@@ -103,16 +119,11 @@
 		
 	</main>
 	
-	<div class="container-fluid p-3 my-3 bg-dark text-white">
+	<div class="container-fluid p-3 my-3 bg-dark text-white fadein4">
 		<p>PROGWEB - GENAP 2020 - 1722002 | 1722031</p>
 		<p>Dosen: AGUS PRIJONO</p>
 	</div>
-	<script src="jquery-3.5.0.min.js">
-	</script> 
-	<script src="js/bootstrap.bundle.js">
-	</script>
-	<script src="js/tokosepatu.js">
-	</script>
+	<script src="js/tokosepatu.js">	</script>
 	<script src="js/init_render.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/module.js"></script>
