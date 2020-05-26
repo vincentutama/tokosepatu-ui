@@ -17,6 +17,7 @@ a:hover {
   background-color: #fff;
   border-color: #fff;
   border-width: medium;
+  transition: all 0.3s linear;
 }
 .btn-secondary:hover{
   color: #fff;
