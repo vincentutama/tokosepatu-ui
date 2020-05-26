@@ -24,9 +24,15 @@ Setelah sebua dependencies dipenuhi lakukan installasi sebagai berikut:
   
  ##useful links
  [CORS Error](https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9)
+ 
  [Laravel app on Heroku](https://medium.com/@nedsoft/how-to-host-a-laravel-app-with-mysql-database-on-heroku-ab56b08be735)
+ 
  [laravel-cors](https://github.com/fruitcake/laravel-cors)
+ 
  [laravel setup](https://medium.com/@erthru/laravel-dan-vue-part-1-laravel-sebagai-backend-defafdd7ed0c)
+ 
  [getting started with laravel](https://devcenter.heroku.com/articles/getting-started-with-laravel)
+ 
  [stackoverflow - how to enable cors](https://stackoverflow.com/questions/55346154/how-to-enable-cors-in-laravel)
+ 
  [stackoverflow - cors problem heroku](https://stackoverflow.com/questions/53875548/cors-problems-on-heroku)
