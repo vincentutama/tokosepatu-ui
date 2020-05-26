@@ -42,3 +42,14 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.fadein1{
+	opacity: 0;
+}
+
+.fadein2{
+	opacity: 0;
+}
+
+.fadein3{
+	opacity: 0;
+}
