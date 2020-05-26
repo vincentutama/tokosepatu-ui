@@ -5,6 +5,9 @@
     <title>Checkout</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/checkout.css" rel="stylesheet">
+	<script src="jquery-3.5.0.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
 
     <style>
       .bd-placeholder-img {
@@ -22,18 +25,27 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
+    
+	<script>
+		$(document).ready(function() {
+			$(".fadein").animate({'opacity':'1'},800);
+			$(".fadein2").animate({'opacity':'1'},1000);
+			$(".fadein3").animate({'opacity':'1'},1200);
+			$(".fadein4").animate({'opacity':'1'},1400);
+		});
+	</script>	  
+	  
   </head>
   <body class="bg-light">
     <div class="container">
   <div class="py-5 text-center">
-    <h1 class = "display-3">TokoSepatu</h1>
-    <h2>Checkout</h2>
-    <p class="lead">Siap menerima sepatumu? Isi info-info kamu di bawah dan lakukan pembelian!</p>
+    <h1 class = "display-3 fadein">TokoSepatu</h1>
+    <h2 class="fadein2">Checkout</h2>
+    <p class="lead fadein3">Siap menerima sepatumu? Isi info-info kamu di bawah dan lakukan pembelian!</p>
   </div>
 
   <div class="row">
-    <div class="col-md-4 order-md-2 mb-4">
+    <div class="col-md-4 order-md-2 mb-4 fadein4">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
         <span class="text-muted">Keranjang kamu</span>
         <span class="badge badge-secondary badge-pill" id="counting-pill">
@@ -48,7 +60,7 @@
         <!-- RENDERED BY CHECKOUT.JS -->
       </div>
     </div>
-    <div class="col-md-8 order-md-1">
+    <div class="col-md-8 order-md-1 fadein4">
       <h4 class="mb-3">Data Penerima</h4>
       <form id="checkout-form" class="needs-validation" onSubmit="return confirmPurchase()" action="javascript:void(0);" novalidate>
         <div class="row">
@@ -106,12 +118,10 @@
     </div>
   </div>
 
-  <footer class="my-5 pt-5 text-muted text-center text-small">
+  <footer class="my-5 pt-5 text-muted text-center text-small fadein4">
     <p class="mb-1">&copy; 2020 TokoSepatu</p>
   </footer>
 </div>
-      <script src="jquery-3.5.0.min.js"></script>
-      <script src="js/bootstrap.bundle.js"></script>
       <script src="js/form-validation.js"></script>
       <script src="js/module.js"></script>
       <script src="js/checkout.js"></script>
