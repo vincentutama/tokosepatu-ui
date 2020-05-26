@@ -10,13 +10,25 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="css/signin.css" rel="stylesheet">
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/module.js"></script>
+	<script src="js/signin.js"></script>
+	<script src="jquery-3.5.0.min.js"></script> 
+	<script>
+		$(document).ready(function() {
+			$(".fadein1").animate({'opacity':'1'},1000);
+			$(".fadein2").animate({'opacity':'1'},1500);
+			$(".fadein3").animate({'opacity':'1'},2000);
+		});
+	</script>
   </head>
   <body class="text-center">
     <!-- <form class="form-signin" id="form_input" -->
     <form class="form-signin" id="form_input" onSubmit="return ver_account()">
-      <h2 class="display-4">TokoSepatu</h2>
-      <h3 class="h4 mb-3 font-weight-normal">Please sign in</h3>
-      <label for="inputUsername" class="sr-only">Username</label>
+      <h2 class="display-4 fadein1">TokoSepatu</h2>
+      <h3 class="h4 mb-3 font-weight-normal fadein1">Please sign in</h3>
+		<div class="fadein2">
+		<label for="inputUsername" class="sr-only">Username</label>
       <input type="username" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
@@ -25,14 +37,14 @@
           <input type="checkbox"/> Remember me
         </label>
       </div>
+		</div>
+      
       <!-- <button class="btn btn-lg btn-primary btn-block" onclick="ver_account()">Sign in</button> -->
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <a class="btn btn-lg btn-warning btn-block" href = "signup.html">Sign Up</a>
+      <button class="btn btn-lg btn-primary btn-block fadein3" type="submit">Sign in</button>
+      <a class="btn btn-lg btn-warning btn-block fadein3" href = "signup.html">Sign Up</a>
       <br>
-      <a class="btn btn-danger btn" href = "index.html">Back to Homepage</a>
-      <p class="mt-5 mb-3 text-muted">&copy;TokoSepatu 2020-2020</p>
+      <a class="btn btn-danger btn fadein3" href = "index.html">Back to Homepage</a>
+      <p class="mt-5 mb-3 text-muted fadein3">&copy;TokoSepatu 2020-2020</p>
     </form>
-<script src="js/module.js"></script>
-<script src="js/signin.js"></script>
 </body>
 </html>
