@@ -2,13 +2,29 @@
 ## tokosepatu-ui: Front end dari proyek web toko sepatu
 Sebuah proyek mata kuliah pemrograman web di Teknik Elektro Universitas Kristen Maranatha.
 
+## Warning
+Versi sekarang dari repository ini ditujukan untuk penggunaan online hosting di heroku, URL-URL pada file html dan javascript masih di direct ke www.vinegar-vint.herokuapp.com sehingga tidak bisa melakukan hosting melalui localhost. Untuk melakukan hosting localhost harap gunakan file [ini](https://drive.google.com/file/d/1Ehu5v_LhRDy2EJquHfsPBDKQrcZd2RYf/view?usp=sharing).
 
+## Issues
+Program web ini masih merupakan work in progress sehingga memiliki banyak bug dan memerlukan banyak perbaikan dan pertambahan fitur, beberapa issue yang ada dalam proyek ini antara lain:
+1. Stock belum bisa update setiap checkout berhasil (perlu tambahan api pada [tokosepatu-backend](https://github.com/vincentutama/tokosepatu-backend))
+2. Cart tidak clear dengan sendirinya setelah melakukan checkout
+3. Tombol "tambah item ke dalam cart" dapat menambah item ke dalam cart tetapi tidak ada animasi/aksi yang menunjukkan bahwa item telah ditambah
+4. Redirect sign up page tidak jalan
+5. Dapat terjadi pembuatan user dengan username yang sama (Backend tidak melakukan validasi)
+6. (BUG) Produk dengan ItemId=1 dirender 2 kali pada halaman cart
+7. Page-page yang menggunakan dummy content
+8. Success page dapat diakses melalui link (tidak ada validasi apakah user selesai melakukan transaksi atau mengakses success page dari url)
+9. Masalah cross-origin request
+10. Filtering pada halaman product tidak berjalan (tidak ada APInya)
+11. Javascript sudah modular tetapi masih ada script yang hardcoded di dalam file html (kerjaan Kalya) {action: pindah script hardcoded ke dalam file js}
+12. API-API yang tidak akan digunakan belum dihapus
 
-## Persiapan
-Untuk mencoba web ini di windows, diperlukan beberapa dependencies:
+## Persiapan & Instalasi
+Untuk mencoba web ini di localhost, diperlukan beberapa dependencies:
   1. [XAMPP](https://www.apachefriends.org/index.html)
   2. [Composer](https://getcomposer.org/download/)
-  3. [tokosepatu-backend](https://github.com/vincentutama/tokosepatu-backend)
+  3. [tokosepatu-backend](https://github.com/vincentutama/tokosepatu-backend) //gunakan versi zip untuk local hosting
 
 Setelah sebua dependencies dipenuhi lakukan installasi sebagai berikut:
   1. Clone repository ini ke dalam folder xampp/htdocs
